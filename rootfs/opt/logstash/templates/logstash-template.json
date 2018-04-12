@@ -1,0 +1,6 @@
+{
+  "template" : "logstash-logs-*",
+  "settings" : {
+    "index.codec" : "best_compression"
+  }
+}

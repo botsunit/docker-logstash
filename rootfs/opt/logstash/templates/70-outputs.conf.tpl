@@ -25,6 +25,8 @@ output {
      elasticsearch {
         hosts => ["#ELASTICSEARCH#"]#ELASTICSEARCH_SSL##ELASTICSEARCH_USER##ELASTICSEARCH_PASSWORD#
         index => "logstash-logs-%{+YYYY.MM.dd}"
+        template_name => "logstash-template"
+        template => "/opt/logstash/templates/logstash-template.json"
      }
   }
 
